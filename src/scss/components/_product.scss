@@ -1,0 +1,126 @@
+.key {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #566856;
+}
+
+.value {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #566856;
+}
+
+.productImgContainer {
+  width: 100px;
+  height: 130px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.productImgContainer img {
+  width: 100px;
+  height: 130px;
+  object-fit: contain;
+
+}
+
+
+.disk {
+  margin-top: 20px;
+
+  // display: flex;
+  &__search {
+    width: 200px;
+    height: 30px;
+    margin-left: 30px;
+  }
+
+  &__create {
+    margin-left: 10px;
+  }
+
+  &__upload-input {
+    display: none;
+  }
+
+  &__upload-label {
+    border: 2px dashed #566885;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  &__select {
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+
+  &__list,
+  &__plate {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: no-repeat center center;
+    background-size: contain;
+    margin: 0 10px;
+  }
+
+  &__list {
+    background-image: url("../../assets/list.svg");
+    position: absolute;
+    right: 0;
+  }
+
+  &__plate {
+    background-image: url("../../assets/plate.svg");
+    position: absolute;
+    right: 35px;
+  }
+}
+
+.product {
+  margin: 10px 0;
+  border-bottom: solid 1px #566856;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &:hover &__details {
+    grid-column-start: 5;
+    display: block;
+  }
+
+  &:hover &__delete {
+    grid-column-start: 6;
+    display: block;
+  }
+}
+
+.fileplate {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+
+}
+
+.file-plate {
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.product-btn {
+  &__product__details {
+    font-size: 10px;
+  }
+
+  &__product__delete {
+    font-size: 10px;
+  }
+}

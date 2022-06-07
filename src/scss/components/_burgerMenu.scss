@@ -1,0 +1,188 @@
+.burgerMenu{
+    &__close-icon-container{
+// width: 100%;
+    }
+    &__close-icon{
+width: 30px;
+height: 30px;
+padding: 5px;
+cursor: pointer;
+text-align: center;
+margin: 0 0 0 auto;
+border-radius: 5px;
+    }
+    &__close-icon:hover{
+      background-color: darkgray;
+            }
+        
+   &__header-container{
+            background-color: black;
+            color: white;
+        border-bottom: 1px solid rgb(211, 211, 211);
+        padding: 10px;
+        margin-bottom: 10px;
+        }
+    &__user:hover{
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+    &__user-icon{
+        height: 40px;
+        width: 40px;
+        background-color: rgb(37, 37, 37);
+        border-radius: 50px;
+        padding: 5px;
+        margin-right: 15px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-align: center;
+    }
+&__user-content{
+    margin: 5px;
+    list-style-type: none;
+    align-items: center;
+    height: 48px;
+    display: flex;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+&__user-content span{
+    color: rgb(203, 203, 203);
+   
+}
+
+&__title{
+    text-align: center;
+    font-size: 2rem;
+   
+}
+&__icon{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 10px;
+}
+&__icon svg{
+    // color: red;
+    font-size: 20px;
+    top: 5px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+&__dropdown{
+    overflow-x: scroll;
+    top: 0;
+    left: 0;
+    position: fixed;
+height: 100%;
+width: 300px;
+background-color: white;
+transform: translateX(-130%);
+transition: all 0.5s;
+}
+&__dropdown.active{
+    transform: translateX(0);
+    border-right: 1px solid black;
+}
+&__container{
+border-bottom: 1px solid black;
+
+}
+&__body{
+    // padding: 20px;
+}
+&__blur{
+    left: 300px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    position: absolute;
+}
+&__content{
+    margin: 5px;
+    align-items: center;
+    height: 48px;
+    display: flex;
+    padding-left: 20px;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+transition: all 0.3s;
+
+    
+}
+ a{
+    color: #221f1f;
+    text-decoration: none;
+}
+&__content:hover{
+    background-color: #94deb4;
+    border-radius: 5px;
+    opacity: 0.8;
+    // color: white;
+transition: all 0.3s;
+
+    cursor: pointer;
+}
+&__content.button{
+    font-size: 14px;
+    color: #221f1f;
+}
+
+
+
+}
+
+.burger-btn{
+    top: 20%;
+    width: 25px;
+    height: 20px;
+    position: relative;
+    left: 8px;
+    }
+
+.burger-btn-container{
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s;
+}  
+.burger-btn-container:hover{
+    background-color: rgb(96, 96, 96);
+    opacity: 0.8;
+    border-radius: 10%;
+    transition: all 0.3s;
+}   
+.burger-btn::after{
+content: '';
+position: absolute;
+top: 0;
+background-color: white;
+width: 25px;
+height: 2px;
+border-radius: 5%;
+}
+.burger-btn span{
+    content: '';
+    position: absolute;
+    top: 9px;
+    background-color: white;
+    width: 25px;
+    height: 2px;
+    border-radius: 5%;
+    }
+    
+.burger-btn::before{
+content: '';
+position: absolute;
+bottom: 0;
+background-color: white;
+width: 25px;
+border-radius: 5%;
+height: 2px;
+}
